@@ -10,16 +10,27 @@
 
 
 <body>
-    <div class="wrapper wrapper-dark">
-        <nav>
-        <div class="name">3-Player Tic-Tac-Toe</div>
-        <div class="remaining">
-            <div class="rules" style="font: bolder; font-size: 1.5rem;">Rules <img src="info.png" alt=""  style="height: 30px;" ></div>
-        <div class="darkmode" id="dark-mode"><img src="moon.png" alt="" class="iconbg" ></div>
-        <div class="darkmode" id="light-mode"> <img src="sunny.png" alt="" class="iconbg" ></div>
-        
+    <div class="ruletext">
+        <ol style="border: 2px solid black;list-style: none;border-top:none  ;">
+            <li>1. Winner-First one to draw three consecutive sign</li>
+            <li>2. Rnner up-Second one to draw three consecutive sign</li>
+            <li>3. Looser-Last one to draw three consecutive sign</li>
+            <li>4. Draw-all/two player cant make win/Runner-up sign respectively</li>
+            <li>5. If we get one Winner then remaining match will continue in only two player</li>
+        <button class="close">close</button>
+        </ol>
     </div>
-    </nav>
+    <div class="wrapper ">
+        <nav>
+            <div class="name">3-Player Tic-Tac-Toe</div>
+            <div class="remaining">
+                <div class="rules" style="font: bolder; font-size: 1.5rem;">Rules <img src="info.png" alt=""
+                        style="height: 30px;"></div>
+                <div class="darkmode" id="dark-mode"><img src="moon.png" alt="" class="iconbg"></div>
+                <div class="darkmode" id="light-mode"> <img src="sunny.png" alt="" class="iconbg"></div>
+            </div>
+        </nav>
+    
         <div class="innerwrapper">
             <div class="gaming-area">
                 <button class="box"></button>

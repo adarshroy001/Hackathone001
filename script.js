@@ -10,8 +10,9 @@ let darkbutton = document.querySelector('#dark-mode');
 let lightbutton = document.querySelector('#light-mode');
 let rulebutton = document.querySelector('.rules');
 let wrapper = document.querySelector('.wrapper');
-let wrapperdark = document.querySelector('.wrapper-dark');
-let iconsbg = document.querySelectorAll('.iconbg')
+let iconsbg = document.querySelectorAll('.iconbg'); 
+let ruletext = document.querySelector('.ruletext');
+let close = document.querySelector('.close');
 const wincondition = [
     [0, 1, 2],
     [1, 2, 3],
@@ -48,7 +49,20 @@ const wincondition = [
     [12, 18, 24],
     [4, 8, 12],
     [8, 12, 16],
-    [12, 16, 20]
+    [12, 16, 20],
+    [1,7,13],
+    [7,13,19],
+    [2,8,14],
+    [5,11,17],
+    [11,17,23],
+    [10,16,22],
+    [10,6,2],
+    [15,11,7],
+    [11,7,3],
+    [22,18,14],
+    [21,17,13],
+    [17,13,9]
+
 ];
 
 let player1 = false;
@@ -313,23 +327,34 @@ const reset = () => {
 
 }
 let darkmode = ()=>{
-wrapper.style.backgroundColor = 'grey';
+wrapper.style.backgroundColor = '#171b1d';
 wrapper.style.backgroundImage = 'none';
-iconsbg[0].style.backgroundColor = 'grey';
-iconsbg[1].style.backgroundColor = 'grey';
-rulebutton.style.backgroundColor = 'grey';
+ruletext.style.backgroundImage = 'none';
+iconsbg[0].style.backgroundColor = '#171b1d';
+iconsbg[1].style.backgroundColor = '#171b1d';
+rulebutton.style.backgroundColor = '#171b1d';
+ruletext.style.backgroundColor = 'grey';
+
 }
 
 let lightmode = ()=>{
     wrapper.style.backgroundColor = 'none';
-    wrapper.style.backgroundImage = 'linear-gradient(#70D6FF,#FF70A6)';
+ruletext.style.backgroundImage = 'linear-gradient(#70D6FF,#FF70A6)';
+wrapper.style.backgroundImage = 'linear-gradient(#70D6FF,#FF70A6)';
     iconsbg[0].style.backgroundColor = '#7ecfff';
     iconsbg[1].style.backgroundColor = '#7ecfff';
     rulebutton.style.backgroundColor = '#7ecfff'; 
+}
+let ruletextvisible = ()=>{
+    ruletext.style.transform = 'scale(1)';
+}
+let ruletextinvisible = ()=>{
+    ruletext.style.transform = 'scale(0)';
 }
 
 rematchbtn.addEventListener('click', reset);
 resetbtn.addEventListener('click', reset);
 darkbutton.addEventListener('click',darkmode);
 lightbutton.addEventListener('click',lightmode);
-
+rulebutton.addEventListener('click',ruletextvisible);
+close.addEventListener('click', ruletextinvisible);

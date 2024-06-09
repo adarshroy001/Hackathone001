@@ -20,19 +20,7 @@
     border: none;
  }
  
-      /* .wrapper-dark{
-
-        width: 100vw;
-        height: 100vh;
-        overflow-y: auto ; 
-        overflow-x: hidden;
-        background-color: #171b1d;
-        .darkmode img {
-        background-color: #ffff;
-        }
-    display: none;
-    
- } */
+ 
 
 
 .name{
@@ -60,8 +48,8 @@
 
 }
 .rightpart{
-
-    height: 90vmin ;
+margin-top: 10vmin;
+    height: 80vmin ;
     width: calc(100vw - 100vmin);
     display: flex;
     flex-wrap: wrap;
@@ -165,3 +153,78 @@ nav{
     background-color: #7ecfff;
     border: none;
 }
+.ruletext{
+width: 35vmax;
+font-weight: bolder;
+background-image: linear-gradient(#70D6FF,#FF70A6);
+position: absolute;
+right: 0px;
+left: calc(100% - 35vmax);
+top: 9.5vmin;
+/* display: none; */
+transform: scale(0);
+transform-origin: left;
+transition: all .7s;
+}
+.close{
+ width: 20%;
+    border-radius: 1.5rem;
+    font-weight: bold;
+    border: #e17373;
+    color: #003049;
+    background-color: #E9FF70;
+    margin-left: 40%;
+    margin-bottom: 2px;
+    
+}
+@media (max-width: 450px) {
+    .name {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+        text-align: center;
+        width: 100%;
+    }
+    
+    nav {
+        margin-bottom: 1rem;
+        flex-direction: column;
+    }
+
+    .gaming-area {
+        width: 90vw;
+        height: 90vw;
+    }
+
+    .rightpart {
+        margin-top: 2rem;
+        height: auto;
+        width: 100%;
+    }
+
+    .buttons {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 1rem;
+    }
+
+    .btn {
+        width: 48%;
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    .ruletext {
+        left: 5%;
+        width: 90vw;
+    }
+
+  
+    .remaining .rules {
+        font-size: 1rem;
+    }
+
+    .remaining {
+        align-items: flex-start;
+    }
+}
+
