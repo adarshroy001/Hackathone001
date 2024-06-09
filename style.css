@@ -303,4 +303,16 @@ nav {
     .remaining {
         align-items: flex-start;
     }
+    .home-page {
+        height: 70%;
+        width: 95%;
+        background-image: linear-gradient(#70D6FF, #FF70A6);
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        margin: auto;
+        transform: scale(0);
+        transform-origin: top;
+        transition: ease-out 3s;
+        opacity: .5;
+    }
 }
