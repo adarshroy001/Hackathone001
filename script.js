@@ -13,6 +13,17 @@ let wrapper = document.querySelector('.wrapper');
 let iconsbg = document.querySelectorAll('.iconbg'); 
 let ruletext = document.querySelector('.ruletext');
 let close = document.querySelector('.close');
+let homepage = document.querySelector('.home-page');
+let enterpage = document.querySelector('.Enterpage');
+let letsplay = document.querySelector('.letsplay');
+
+setTimeout (()=>{
+homepage.style.transform = 'scale(1)';
+},1500);
+let secondpageloader = ()=>{
+enterpage.style.display='none';
+wrapper.style.display = 'block';
+}
 const wincondition = [
     [0, 1, 2],
     [1, 2, 3],
@@ -358,3 +369,4 @@ darkbutton.addEventListener('click',darkmode);
 lightbutton.addEventListener('click',lightmode);
 rulebutton.addEventListener('click',ruletextvisible);
 close.addEventListener('click', ruletextinvisible);
+letsplay.addEventListener('click',secondpageloader);
