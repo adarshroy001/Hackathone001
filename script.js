@@ -6,6 +6,12 @@ let mainmsgcontainer = document.querySelector('.standing');
 let firstwinner = document.querySelector('#result1');
 let secondwinner = document.querySelector('#result2');
 let thirdwinner = document.querySelector('#result3');
+let darkbutton = document.querySelector('#dark-mode');
+let lightbutton = document.querySelector('#light-mode');
+let rulebutton = document.querySelector('.rules');
+let wrapper = document.querySelector('.wrapper');
+let wrapperdark = document.querySelector('.wrapper-dark');
+let iconsbg = document.querySelectorAll('.iconbg')
 const wincondition = [
     [0, 1, 2],
     [1, 2, 3],
@@ -244,7 +250,6 @@ const stopwinner = (val1) => {
     }
 
 }
-
 const stoprunnerup = (newval1) => {
     if (newval1 === "X") {
         secondwinner.innerText = 'Runner-up : Player-X';
@@ -307,5 +312,24 @@ const reset = () => {
     enablebox();
 
 }
+let darkmode = ()=>{
+wrapper.style.backgroundColor = 'grey';
+wrapper.style.backgroundImage = 'none';
+iconsbg[0].style.backgroundColor = 'grey';
+iconsbg[1].style.backgroundColor = 'grey';
+rulebutton.style.backgroundColor = 'grey';
+}
+
+let lightmode = ()=>{
+    wrapper.style.backgroundColor = 'none';
+    wrapper.style.backgroundImage = 'linear-gradient(#70D6FF,#FF70A6)';
+    iconsbg[0].style.backgroundColor = '#7ecfff';
+    iconsbg[1].style.backgroundColor = '#7ecfff';
+    rulebutton.style.backgroundColor = '#7ecfff'; 
+}
+
 rematchbtn.addEventListener('click', reset);
 resetbtn.addEventListener('click', reset);
+darkbutton.addEventListener('click',darkmode);
+lightbutton.addEventListener('click',lightmode);
+

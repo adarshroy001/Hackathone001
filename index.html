@@ -10,8 +10,16 @@
 
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper wrapper-dark">
+        <nav>
         <div class="name">3-Player Tic-Tac-Toe</div>
+        <div class="remaining">
+            <div class="rules" style="font: bolder; font-size: 1.5rem;">Rules <img src="info.png" alt=""  style="height: 30px;" ></div>
+        <div class="darkmode" id="dark-mode"><img src="moon.png" alt="" class="iconbg" ></div>
+        <div class="darkmode" id="light-mode"> <img src="sunny.png" alt="" class="iconbg" ></div>
+        
+    </div>
+    </nav>
         <div class="innerwrapper">
             <div class="gaming-area">
                 <button class="box"></button>
@@ -42,7 +50,9 @@
             </div>
             <div class="rightpart">
                 <div class="standing">
-                    <div class="standing-heading"><h1  class="stdheading"> </h1> </div>
+                    <div class="standing-heading">
+                        <h1 class="stdheading"> </h1>
+                    </div>
                     <div class="result" id="result1"> </div>
                     <div class="result" id="result2"> </div>
                     <div class="result" id="result3"> </div>
