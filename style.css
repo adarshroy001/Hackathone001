@@ -32,7 +32,7 @@
 }
 
 .home-page {
-    height: 65%;
+    height: 50%;
     width: 60%;
     background-image: linear-gradient(#70D6FF, #FF70A6);
     border-bottom-left-radius: 2rem;
@@ -49,7 +49,7 @@
 }
 
 .text>ol>li {
-    margin-top: 1rem;
+    margin-top: 10px;
 
 }
 
@@ -62,7 +62,7 @@
     border-radius: 2rem;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3%;
+    margin-top: 1rem;
     text-align: center;
    
 }
@@ -85,10 +85,8 @@
 }
 
 
-
-
 .name {
-    font-size: 4rem;
+    font-size: 3.8rem;
     font-weight: bolder;
     text-shadow: #E9FF70 6px 1px 6px;
     color: #e27396;
@@ -240,8 +238,8 @@ nav {
     left: calc(100% - 35vmax);
     top: 9.5vmin;
     transform: scale(0);
-    transform-origin: left;
-    transition: all .7s;
+    transform-origin: top left;
+    transition: ease-in-out .7s;
 }
 
 .close {

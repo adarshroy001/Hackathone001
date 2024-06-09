@@ -16,6 +16,7 @@ let close = document.querySelector('.close');
 let homepage = document.querySelector('.home-page');
 let enterpage = document.querySelector('.Enterpage');
 let letsplay = document.querySelector('.letsplay');
+let namm = document.querySelector('.name')
 
 setTimeout (()=>{
 homepage.style.transform = 'scale(1)';
@@ -338,14 +339,23 @@ const reset = () => {
 
 }
 let darkmode = ()=>{
-wrapper.style.backgroundColor = '#171b1d';
+wrapper.style.backgroundColor = '#18191A';
 wrapper.style.backgroundImage = 'none';
 ruletext.style.backgroundImage = 'none';
-iconsbg[0].style.backgroundColor = '#171b1d';
-iconsbg[1].style.backgroundColor = '#171b1d';
-rulebutton.style.backgroundColor = '#171b1d';
+iconsbg[0].style.backgroundColor = '#18191A';
+iconsbg[1].style.backgroundColor = '#18191A';
+rulebutton.style.backgroundColor = '#18191A';
 ruletext.style.backgroundColor = 'grey';
-
+namm.style.color = '#ffff';
+namm.style.textShadow  = 'none';
+ruletext.style.color = '#ffff';
+close.style.backgroundColor = '#82B1FF';
+resetbtn.style.backgroundColor = '#82B1FF';
+rematchbtn.style.backgroundColor = '#82B1FF';
+for (box of boxes) {
+    box.style.backgroundColor = '#82B1FF';
+    box.style.color = '#ffff';
+   }
 }
 
 let lightmode = ()=>{
@@ -355,6 +365,16 @@ wrapper.style.backgroundImage = 'linear-gradient(#70D6FF,#FF70A6)';
     iconsbg[0].style.backgroundColor = '#7ecfff';
     iconsbg[1].style.backgroundColor = '#7ecfff';
     rulebutton.style.backgroundColor = '#7ecfff'; 
+close.style.backgroundColor = '#E9FF70';
+    resetbtn.style.backgroundColor = '#E9FF70';
+rematchbtn.style.backgroundColor = '#E9FF70';
+    namm.style.color = '#e27396';
+    namm.style.textShadow  = '#E9FF70 6px 1px 6px';
+    for (box of boxes) {
+        box.style.backgroundColor = '#E9FF70';
+        box.style.color = '#FF9770';
+       }
+   
 }
 let ruletextvisible = ()=>{
     ruletext.style.transform = 'scale(1)';
